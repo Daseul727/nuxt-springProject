@@ -1,20 +1,32 @@
 <template>
   <div>
-    <page-header/>
-
-    <page-footer/>
+    <div class="week-ranking">
+      <h3>주간 랭킹 작품</h3>
+    </div>
+    <div class="realtime-tag">
+      <h3>실시간 인기 태그</h3>
+    </div>
+    <div class="expo-scheduler">
+      <h3>행사 일정</h3>
+    </div>
+    <div class="week-artwork">
+      <h3>주간 작품</h3>
+    </div>
+    <div class="new-artwork">
+      <h3>신규 작품</h3>
+    </div>
+    <div class="event-area">
+      <h3>절찬리 이벤트 중! </h3>
+    </div>
   </div>
 </template>
 
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-import PageFooter from "~/components/PageFooter.vue";
-import PageHeader from "~/components/PageHeader.vue";
+
 export default {
   components: {
-    PageHeader,
-    PageFooter
+
   }
 }
 </script>
