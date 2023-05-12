@@ -3,6 +3,9 @@ server:
   port: 8080
 
 spring:
+  thymeleaf:
+    cache: false
+
   jackson:
     property-naming-strategy: SNAKE_CASE
 
