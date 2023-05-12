@@ -6,7 +6,7 @@
 
 <!-- index.html 고유 CSS 추가 -->
 <th:block layout:fragment="css">
-  <!--    <link rel="stylesheet" th:href="@{/css/page/home.css}" >-->
+  <!--<link rel="stylesheet" th:href="@{/css/common.css}" >-->
 </th:block>
 <!-- index.html 고유 스크립트 추가 -->
 <th:block layout:fragment="script">
@@ -15,6 +15,56 @@
 
 <!-- Content -->
 <div layout:fragment="content">
-  <h3>회원관리</h3>
+  <div class="container">
+    <div class="admin-search">
+      <table>
+        <tr>
+          <th>회원구분</th>
+          <td>
+            <input type="checkbox"> 전체
+            <input type="checkbox"> 그림
+            <input type="checkbox"> 글
+            <input type="checkbox"> 코스
+          </td>
+          <th>활동상태</th>
+          <td>
+            <input type="checkbox"> 전체
+            <input type="checkbox"> 활동
+            <input type="checkbox"> 휴면
+            <input type="checkbox"> 탈퇴
+          </td>
+        </tr>
+        <tr>
+          <th>가입일</th>
+          <td th:colspan="3">
+            <input type="text"> ~ <input type="text"> 어제 오늘 1주일 1개월
+          </td>
+        </tr>
+        <tr>
+          <th>검색어</th>
+          <td th:colspan="3">
+            <select>
+              <option>회원ID</option>
+            </select>
+            <input type="text">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="admin-list">
+      <table>
+        <tr>
+          <th>번호</th>
+          <th>가입일</th>
+          <th>가입경로</th>
+          <th>이름</th>
+          <th>닉네임</th>
+          <th>이메일</th>
+          <th>회원구분</th>
+          <th>활동상태</th>
+        </tr>
+      </table>
+    </div>
+  </div>
 </div>
 </html>
