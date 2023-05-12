@@ -6,7 +6,7 @@
 
 <!-- index.html 고유 CSS 추가 -->
 <th:block layout:fragment="css">
-    <!--    <link rel="stylesheet" th:href="@{/css/page/home.css}" >-->
+    <link rel="stylesheet" th:href="@{/css/common.css}" >
 </th:block>
 <!-- index.html 고유 스크립트 추가 -->
 <th:block layout:fragment="script">
@@ -15,6 +15,10 @@
 
 <!-- Content -->
 <div layout:fragment="content">
-    <h3>대시보드</h3>
+    <div class="container">
+        <h3>대시보드</h3>
+        <img th:src="@{/image/dash1.PNG}"/>
+        <img th:src="@{/image/dash2.PNG}"/>
+    </div>
 </div>
 </html>

@@ -1,14 +1,45 @@
 <html lagn="ko" xmlns:th="http://www.thymeleaf.org">
-<!--headerFragment 선언-->
-<div th:fragment="headerFragment">
-  <ul>
-    <li><a class="active" href="/admin">대시보드</a></li>
-    <li><a href="/admin/statistics/list">방문 통계</a></li>
-    <li><a href="/admin/user/list">회원 관리</a></li>
-    <li><a href="/admin/menu/list">메뉴 관리</a></li>
-    <li><a href="/admin/expo/list">일정 관리</a></li>
-    <li><a href="/admin/tag/list">태그 관리</a></li>
-    <li><a href="/admin/event/list">이벤트 관리</a></li>
-  </ul>
-</div>
+  <!--headerFragment 선언-->
+  <div th:fragment="headerFragment">
+    <style>
+      ul {
+        list-style-type: none;
+        margin: -19px -9px -9px -7px;
+        width: 10%;
+        padding:50px 0 0 0;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: #555;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+    </style>
+
+    <ul>
+      <li><a href="/admin">대시보드</a></li>
+      <li><a href="/admin/statistics/list">방문 통계</a></li>
+      <li><a href="/admin/user/list">회원 관리</a></li>
+      <li><a href="/admin/menu/list">메뉴 관리</a></li>
+      <li><a href="/admin/expo/list">일정 관리</a></li>
+      <li><a href="/admin/tag/list">태그 관리</a></li>
+      <li><a href="/admin/event/list">이벤트 관리</a></li>
+    </ul>
+
+  </div>
 </html>
