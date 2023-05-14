@@ -1,5 +1,6 @@
 <template>
   <div>
+    <img src="../static/image/main/test.png">
     <div class="week-ranking">
       <h3>주간 랭킹 작품</h3>
     </div>
