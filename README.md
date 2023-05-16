@@ -9,3 +9,6 @@
 - front end port : 3000
 - back end port : 8080
 - database : h2
+
+## 문제점
+- nuxt static 경로와 spring thymeleaf static 경로가 겹쳐서 thymeleaf static 자원 보이지않음
